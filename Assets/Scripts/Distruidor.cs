@@ -19,4 +19,8 @@ public class Distruidor : MonoBehaviour {
         GameObject collider = collsion.collider.gameObject;
         GameObject.Destroy(collider);
     }
+
+	void OnTriggerEnter2D(Collider2D collider){
+		GameObject.Destroy (collider.gameObject);
+	}
 }
